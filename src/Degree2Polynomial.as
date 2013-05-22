@@ -32,12 +32,16 @@ package
 			return temp;
 		}
 		public function solve():String {
+			if (_a == 0 && _b == 0) {
+				return "x can be anything";
+			}
 			if (_a == 0) {
 				return String("x = " + _c/_b);
 			}
 			if ((_b * _b) - 4 * (_a * _c) < 0) {
 				return "No real roots";
 			}
+			
 			var x1:Number = this.getFirstRoot();
 			var x2:Number = this.getSecondRoot();
 			var answer:String = "x1 = " + x1 + " x2 = " + x2;

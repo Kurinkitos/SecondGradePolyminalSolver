@@ -57,7 +57,7 @@ package
 			polynomialField.y = 5;
 			polynomialField.border = true;
 			
-			polynomialField.text = "";
+			polynomialField.text = "ax^2 + bx + c";
 			var txtFormat:TextFormat = new TextFormat;
 			txtFormat.align = "center";
 			polynomialField.setTextFormat(txtFormat);
